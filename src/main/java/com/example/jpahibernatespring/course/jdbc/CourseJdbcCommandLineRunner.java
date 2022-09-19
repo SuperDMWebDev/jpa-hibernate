@@ -5,12 +5,15 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import com.example.jpahibernatespring.course.Course;
+import com.example.jpahibernatespring.course.jpa.CourseJpaRepository;
 
 @Component
 public class CourseJdbcCommandLineRunner implements CommandLineRunner{
 
 	@Autowired
-	private CourseJdbcRepository repository;
+//	private CourseJdbcRepository repository;
+	
+	private CourseJpaRepository repository;
 	
 	@Override
 	public void run(String... args) throws Exception {
