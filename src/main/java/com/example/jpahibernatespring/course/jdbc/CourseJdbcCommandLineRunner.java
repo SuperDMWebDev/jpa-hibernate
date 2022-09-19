@@ -16,6 +16,8 @@ public class CourseJdbcCommandLineRunner implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		repository.insert(new Course(1,"Learn jdbc","28minutes	"));
+//		repository.delete(1);
+		System.out.println(repository.findById(1));
 		
 	}
 
